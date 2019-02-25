@@ -1,0 +1,17 @@
+{
+  "name": "Liberte sua Mensagem",
+  "version": 2,
+  "alias": [
+    "libertesuamensagem.com.br", 
+    "www.libertesuamensagem.com.br"
+  ],
+  "builds": [
+		{ "src": "index.html", "use": "@now/html-minifier" },
+    { "src": "assets/css/*.css", "use": "@now/html-minifier" },
+    { "src": "images/*.png", "use": "@now/optipng" },
+    { "src": "assets/fonts/**", "use": "@now/static"},
+    { "src": "assets/js/**", "use": "@now/static"},
+    { "src": "assets/sass/**", "use": "@now/static"},
+    { "src": "images/**", "use": "@now/static"}
+  	]
+}
